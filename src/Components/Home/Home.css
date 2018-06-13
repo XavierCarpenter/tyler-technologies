@@ -1,0 +1,164 @@
+.home-container{
+    height: 300vh;
+}
+header{
+    display: flex;
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    background: white;
+    justify-content: space-between;
+    align-items: center;
+ /* -webkit-box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.36);
+-moz-box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.36);
+box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.36); */
+}
+.logo-container{
+    /* background: url("../../images/tyler-logo-header.png") */
+}
+.logo{
+    height: 40px;
+}
+.login-register{
+    display: flex;
+}
+.login-register h4{ 
+    padding: 0 5px;
+}
+.hamburger{
+    margin: 0 10px 0 0;
+
+}
+.fa-bars{
+    font-size: 20px;
+    color: #40528F;
+
+}
+.splash-img{
+    background: url("../../images/mainbanner.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 70vh;
+}
+.splash-img h1{
+    font-size: 1.8em;
+    font-weight: 700;
+    padding: 100px 0 0 10px;
+}
+.splash-img h3{
+    font-size: 1.1em;
+    font-weight: 600;
+    padding: 20px 0 10px 10px; 
+}
+.splash-img button{
+        margin: 10px 0 0 10px;     
+
+}
+.btn{
+    color: white;
+    background: #40528F;
+    border: none;
+    -webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+border-radius: 5px;
+    height: 40px;
+
+}
+.bold{
+    font-weight: 600;    
+}
+.about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 15px;
+    font-size: 1.1em;
+}
+.about p{
+    line-height: 25px;
+    margin: 20px 0 10px 0;
+}
+hr{
+    margin: 10px 50px;
+    color: #40528F;
+    
+}
+.services-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.services-list{
+    display: flex;
+    flex-wrap: wrap;
+}
+.services {
+width: 50px;
+height: 50px;
+margin: 35px 25px;
+display: flex;
+flex-direction: column;
+text-align: center;
+}
+.get-started{
+    width: 100%;
+    height: 25vh;
+    margin: 10% 0 0 0;
+    background: url("../../images/small-wave.png");
+    background-position: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.get-started h1{
+    font-size: 1.8em;
+    margin: 0 0 15px 0;
+    
+}
+.nav2{
+    width: 100%;
+    height: 84%;
+    display: flex;
+    justify-content: center;
+}
+.nav2-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-around;
+    color: #40528F;
+}
+.nav2-list li{
+    padding: 0 10px;
+}
+.news-events{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.news-events h1{
+    font-size: 1.8em;
+    margin: 20px 0;
+    
+}
+.stories{
+align-items: center;
+}
+.story-box{
+    margin: 0 0 20px 0;
+}
+.story-box h3{
+    color: #8f9b49;
+    font-size: 1.3em;
+    margin: 0 0 8px 0;
+}
+.story{
+    color: #777777;
+}
+footer{
+    width: 100%;
+    height: 30vh;
+    background: url("../../images/footer.jpg");
+}
