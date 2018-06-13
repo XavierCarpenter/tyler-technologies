@@ -12,15 +12,26 @@ import SCH from "../../images/Sch.png";
 
 
 class Home extends Component {
+    constructor() {
+        super();
+        this.state = {
+            navActive: false
+        }
+    }
+    changeNav() {
+        this.setState({ navActive: !this.state.navActive })
+    }
     render() {
         return (
             <div className="home-container">
                 <header>
                     <div className="logo-container"><img className="logo" src={logo} /></div>
                     <div className="login-register"><h4>Login</h4> | <h4>Register</h4></div>
-                    <div className="hamburger"><i className="fas fa-bars" /></div>
+
+                    {this.state.navActive === false ? <div className="hamburger"><i onClick={() => this.changeNav()} className="fas fa-bars" /></div> :
+                    <div className="hamburger"><i onClick={() => this.changeNav()} className="fas fa-times" /></div> }                   
                 </header>
-                {/* <nav>
+                {/* <nav className="main-nav">
                     <ul>
                         <li>Home</li>
                         <li>Solutions &amp; Products</li>
@@ -33,6 +44,22 @@ class Home extends Component {
 
                     </ul>
                 </nav> */}
+
+                {this.state.navActive === true ? <nav className="mobile-nav">
+                    <input placeholder="Search"/>
+                    <ul className="mobile-nav-list">
+                        <li>Home</li>
+                        <li>Solutions &amp; Products</li>
+                        <li>The Tyler Expierence</li>
+                        <li>About Us</li>
+                        <li>Client Support</li>
+                        <li>Careers</li>
+                        <li>Contact Us</li>
+                        <li>Investors</li>
+
+                    </ul>
+                </nav>
+                    : null}
                 <div className="splash-img">
                     <h1>Tyler Has Acquired Socrata!</h1>
                     <h3>Two market leaders with a shared focus and vision partnering to unleash data and insights.</h3>
@@ -64,7 +91,7 @@ Documents</p></li>
                     </ul>
                 </div>
                 <div className="get-started">
-                    <h1>Get Started</h1>
+                    <h1>Get <span className="bold">Started</span></h1>
                     <div className="nav2">
                         <ul className="nav2-list">
                             <li><button className="btn">Get Product Support</button></li>
@@ -77,7 +104,7 @@ Documents</p></li>
                     </div>
                 </div>
                 <div className="news-events">
-                    <h1>News &amp; Events</h1>
+                    <h1>News &amp; <span className="bold">Events</span></h1>
                     <div className="stories">
                         <div className="story-box">
                             <h3>Tyler Technologies to Acquire Socrata</h3>
