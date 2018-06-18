@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './Home.css';
-import logo from "../../images/tyler-logo-header.png";
 import AT from "../../images/AT.png";
 import CJ from "../../images/CJ.png";
 import DI from "../../images/DI.png";
@@ -10,56 +9,15 @@ import PS from "../../images/PS.png";
 import RD from "../../images/RD.png";
 import SCH from "../../images/Sch.png";
 
+import Header from "../Header/Header";
+
 
 class Home extends Component {
-    constructor() {
-        super();
-        this.state = {
-            navActive: false
-        }
-    }
-    changeNav() {
-        this.setState({ navActive: !this.state.navActive })
-    }
+
     render() {
         return (
             <div className="home-container">
-                <header>
-                    <div className="logo-container"><img className="logo" src={logo} /></div>
-                    <div className="login-register"><h4>Login</h4> | <h4>Register</h4></div>
-
-                    {this.state.navActive === false ? <div className="hamburger"><i onClick={() => this.changeNav()} className="fas fa-bars" /></div> :
-                    <div className="hamburger"><i onClick={() => this.changeNav()} className="fas fa-times" /></div> }                   
-                </header>
-                {/* <nav className="main-nav">
-                    <ul>
-                        <li>Home</li>
-                        <li>Solutions &amp; Products</li>
-                        <li>The Tyler Expierence</li>
-                        <li>About Us</li>
-                        <li>Client Support</li>
-                        <li>Careers</li>
-                        <li>Contact Us</li>
-                        <li>Investors</li>
-
-                    </ul>
-                </nav> */}
-
-                {this.state.navActive === true ? <nav className="mobile-nav">
-                    <input placeholder="Search"/>
-                    <ul className="mobile-nav-list">
-                        <li>Home</li>
-                        <li>Solutions &amp; Products</li>
-                        <li>The Tyler Expierence</li>
-                        <li>About Us</li>
-                        <li>Client Support</li>
-                        <li>Careers</li>
-                        <li>Contact Us</li>
-                        <li>Investors</li>
-
-                    </ul>
-                </nav>
-                    : null}
+                <Header />
                 <div className="splash-img">
                     <h1>Tyler Has Acquired Socrata!</h1>
                     <h3>Two market leaders with a shared focus and vision partnering to unleash data and insights.</h3>

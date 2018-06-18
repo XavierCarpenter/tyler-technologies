@@ -1,0 +1,70 @@
+.SolProducts-container{
+        font-family: 'Lato', sans-serif;
+    height: 100%;
+    width: 100%;
+
+}
+.solutions-img{
+        background: url("../../images/solutions-and-products.jpg");
+    background-position: center;
+    background-size: cover;
+    /* margin: 40px 0 0 0; */
+    height: 25vh;
+}
+.breadcrumbs{
+    font-size: 14px;
+}
+.breadcrumbs a{
+    text-decoration: none;
+    color: #40528F;
+}
+.solutions-wrapper{
+    display: flex;
+}
+.solProducts-info{
+    margin: 10px 0 0 0
+}
+.solProducts-info h1{
+    font-size: 1.2em;
+    font-weight: 700;
+    color: #40528F;
+    margin: 0 0 0 10px;
+}
+.solProducts-info h2{
+    font-size: 1em;    
+     font-weight: 700;
+    color: #40528F;
+    margin: 10px 0 0 10px;
+    
+}
+.solProducts-info h3{
+    color: #8f9b49;
+    font-style: italic;
+    width: 250px;    
+    margin: 10px 0 0 10px;
+    
+}
+.solProducts-info p{
+    font-size: 14px;
+    font-weight: 400;
+    width: 250px;
+    color: #7777;
+    margin: 10px 0 0 10px;
+}
+.quick-links{
+    margin: 10px 0 0 22px;
+    text-align: center;
+    
+}
+.quick-links h1{
+color: #8f9b49;
+font-weight: 700;
+
+}
+.solutions-links-list, .products-links-list{
+    font-size: 12px;
+    text-align: center;
+}
+.solutions-links-list li, .products-links-list li{
+padding: 3px 0;
+}
