@@ -19,7 +19,7 @@ class Header extends Component {
             <div className="header-container">
                 <header>
                     <div className="top-nav">
-                        <div className="logo-container"><img className="logo" src={logo} /></div>
+                        <div className="logo-container"><Link to="/"><img className="logo" src={logo} />   </Link></div>
                         <div className="hamburger search"><i className="fas fa-search" /></div>
                         <div className="login-register"><h4>Login</h4> | <h4>Register</h4></div>
                         {this.state.navActive === false ? <div className="hamburger bars"><i onClick={() => this.changeNav()} className="fas fa-bars" /></div> :

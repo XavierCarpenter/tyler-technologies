@@ -48,7 +48,8 @@
     font-size: 14px;
     font-weight: 400;
     width: 250px;
-    color: #7777;
+    color: #777777;
+    line-height: 20px;
     margin: 10px 0 0 10px;
 }
 .quick-links{
@@ -67,4 +68,23 @@ font-weight: 700;
 }
 .solutions-links-list li, .products-links-list li{
 padding: 3px 0;
+}
+.story-box{
+    margin: 0 10px 20px 10px;
+}
+.story-box2 h3{
+    color: #8f9b49;
+    font-size: 1em;
+    font-weight: bold;
+    margin: 8px 0 8px 8px;
+}
+.story2{
+    color: #777777;
+    line-height: 24px;
+    margin: 0 0 0 8px;
+}
+.more2{
+    margin: 5px 0 15px 8px;
+    color: #40528F;
+    font-weight: bold;
 }

@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { Link, withRouter } from 'react-router-dom'
+
 import './Home.css';
 import AT from "../../images/AT.png";
 import CJ from "../../images/CJ.png";
@@ -10,6 +12,8 @@ import RD from "../../images/RD.png";
 import SCH from "../../images/Sch.png";
 
 import Header from "../Header/Header";
+import Footer from "../Footer/Footer";
+
 
 
 class Home extends Component {
@@ -22,7 +26,7 @@ class Home extends Component {
                     <h1>Tyler Has Acquired Socrata!</h1>
                     <h3>Two market leaders with a shared focus and vision partnering to unleash data and insights.</h3>
                     <h3>Welcome to the future.</h3>
-                    <button className="btn">Learn More</button>
+                    <Link to="/tyler-acquires-socrata"><button className="btn">Learn More</button></Link>
                 </div>
                 <div className="about"><p>Tyler Technologies is the <span className="bold">largest software company</span> in the nation solely focused on providing integrated software and technology services to the public sector — cities, counties, states, and school districts.</p>
                     <p>Public sector software isn't just what we do, <span className="bold">it's all we do</span>.</p></div>
@@ -82,7 +86,7 @@ Documents</p></li>
                         </div>
                     </div>
                 </div>
-                <footer>Follow Us</footer>
+                <Footer/>
             </div>
         )
     }

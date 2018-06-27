@@ -1,7 +1,9 @@
 import React, { Component } from "react";
-import Header from "../Header/Header";
 import { Link, withRouter } from 'react-router-dom'
 import './SolProducts.css';
+
+import Header from "../Header/Header";
+import Footer from "../Footer/Footer";
 
 
 class SolProducts extends Component {
@@ -31,32 +33,52 @@ class SolProducts extends Component {
                         <div className="solutions-links">
                             <h1>Tyler Solutions</h1>
                             <ul className="solutions-links-list">
-                                <li >Appraisal &amp; Tax</li>
-                                    <li >Courts &amp; Justice</li>
-                                    <li>Data &amp; Insights</li>
-                                    <li >ERP Financial</li>
-                                    <li >Planning, Regulatory &amp; Maintenance</li>
-                                    <li >Public Safety</li>
-                                    <li >Records &amp; Documents</li>
-                                    <li >Schools</li>
+                                <a href="#"><li >Appraisal &amp; Tax</li></a>
+                                <a href="#"><li >Courts &amp; Justice</li></a>
+                                <a href="#"> <li>Data &amp; Insights</li></a>
+                                <a href="#"><li >ERP Financial</li></a>
+                                <a href="#"><li >Planning, Regulatory &amp; Maintenance</li></a>
+                                <a href="#"><li >Public Safety</li></a>
+                                <a href="#"><li >Records &amp; Documents</li></a>
+                                <a href="#"><li >Schools</li></a>
                             </ul>
                         </div>
                         <div className="products-links">
                             <h1>Tyler Products</h1>
                             <ul className="products-links-list">
-                                <li >AES</li>
-                                <li >Brazos</li>
-                                <li>CLT Appraisal Services</li>
-                                <li >Document Pro</li>
-                                <li >Eagle</li>
-                                <li >Eden</li>
-                                <li >EnerGov</li>
-                                <li >ExecuTime</li>
+                                <a href="#"><li >» AES</li></a>
+                                <a href="#"><li >» Brazos</li></a>
+                                <a href="#"><li>» CLT Appraisal Services</li></a>
+                                <a href="#"><li >» Document Pro</li></a>
+                                <a href="#"><li >» Eagle</li></a>
+                                <a href="#"><li >» Eden</li></a>
+                                <a href="#"><li >» EnerGov</li></a>
+                                <a href="#"><li >» ExecuTime</li></a>
                             </ul>
                         </div>
                     </div>
                 </div>
+                <div className="news-events">
+                    <div className="stories">
+                        <div className="story-box2">
+                            <h3>GET MORE INFORMATION</h3>
+                            <p className="story2">Download the Tyler corporate overview brochure »</p>
+                        </div>
+                        <div className="story-box2">
+                            <h3 >DISCOVER THE TYLER EXPERIENCE</h3>
+                            <p className="story2">We give you the tools you need to meet all of your obligations, as well as and manage your complex, mission-critical functions.</p>
+                            <p className="more2"> Learn more about The Tyler Experience »</p>
+                        </div>
+                        <div className="story-box2">
+                            <h3 >TRANSFORM THE WAY YOU WORK</h3>
+                            <p className="story2">Our products and services empower you to deliver better and faster assistance to citizens — greater transparency and accessibility, sustainable office practices, secure data that’s easy to manage and maintain and faster results. </p>
+                            <p className="more2">Learn more about transformative technologies »
 
+</p>
+                        </div>
+                    </div>
+                </div>
+                <Footer />
             </div>
         )
     }
