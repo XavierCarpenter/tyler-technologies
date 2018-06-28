@@ -27,8 +27,8 @@ class Header extends Component {
                     </div>
                     <nav className="main-nav">
                         <ul className="main-nav-list">
-                            <li>Home</li>
-                            <li>Solutions &amp; Products</li>
+                            <Link to="/"> <li>Home</li></Link>
+                            <Link to="/solutions-products"><li>Solutions &amp; Products</li></Link>
                             <li>The Tyler Expierence</li>
                             <li>About Us</li>
                             <li>Client Support</li>

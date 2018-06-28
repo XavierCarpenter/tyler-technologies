@@ -59,10 +59,10 @@ class SolProducts extends Component {
                     </div>
                 </div>
                 <div className="news-events">
-                    <div className="stories">
+                    <div className="stories2">
                         <div className="story-box2">
                             <h3>GET MORE INFORMATION</h3>
-                            <p className="story2">Download the Tyler corporate overview brochure »</p>
+                            <p className="story2"><a href="">Download the Tyler corporate overview brochure »</a></p>
                         </div>
                         <div className="story-box2">
                             <h3 >DISCOVER THE TYLER EXPERIENCE</h3>
