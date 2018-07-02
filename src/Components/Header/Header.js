@@ -29,7 +29,7 @@ class Header extends Component {
                         <ul className="main-nav-list">
                             <Link to="/"> <li>Home</li></Link>
                             <Link to="/solutions-products"><li>Solutions &amp; Products</li></Link>
-                            <li>The Tyler Expierence</li>
+                            <Link to="/tyler-expierence"><li>The Tyler Expierence</li></Link>
                             <li>About Us</li>
                             <li>Client Support</li>
                             <li>Careers</li>
@@ -49,7 +49,7 @@ class Header extends Component {
                         <Link to="/solutions-products">
                             <li>Solutions &amp; Products</li>
                         </Link>
-                        <li>The Tyler Expierence</li>
+                        <Link to="/tyler-expierence"><li>The Tyler Expierence</li></Link>
                         <li>About Us</li>
                         <li>Client Support</li>
                         <li>Careers</li>

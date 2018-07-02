@@ -144,10 +144,11 @@ flex-direction: row;
 }
 .main-nav-list li:hover{
     cursor: pointer;
-    background: #fff;
+    background: #e9f0f6;
     color: #40528F;
     padding: 15px;
 }
+
 } 
 
 /* Large devices (laptops/desktops) */
